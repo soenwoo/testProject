@@ -1,0 +1,232 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin:0px;
+    padding:0px;
+    color:#000;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: lighter;
+}
+
+.contents1{
+    font-size:20px;
+    font-weight: lighter;
+}
+.contents2{
+    font-size: 24px;
+    font-weight: bold;
+}
+.contents3{
+    font-size: 14px;
+    font-weight: lighter;
+}
+/* css로 배경 불러오기 */
+.intro_bg{
+    background-image: url("image/baby_bg.jpg");
+    width: 100%;
+    height:970px;
+
+}
+.header{
+    display: flex;
+    width: 1280px;
+    height: 86px;
+    margin: auto;
+}
+.searchArea{
+    width:300px;
+    height: 40px;
+    background:rgba(0,0,0,0);
+    border-radius: 5px;
+    margin-top: 24px;
+}
+.searchArea > form > input{
+    border:none;
+    background:rgba(255, 255, 255, 0.568);
+    border-radius: 15px;
+    width:250px;
+    height:40px;
+    padding-left:10px
+}
+.searchArea > form > span{
+    width:50px;
+    color:white;
+    font-weight: bold;
+    cursor:pointer;
+}
+.nav{
+    display: flex;
+    /* 왼쪽 끝에 붙이기 */
+    justify-content: flex-end;
+    line-height: 86px;
+    width: calc(1280px - 300px);
+    background:rgba(0,0,0,0.0);
+}
+.nav > li{
+    margin-left: 84px;
+}
+.nav > li > a{
+    color: #fff;
+}
+.intro_text{
+    width: 100%;
+    /* 상우하좌 */
+    margin: 231px auto 231px auto;
+    text-align: center;
+}
+.intro_text > h1{
+    color:#fff;
+    font-size: 48px;
+}
+.intro_text > h4{
+    color:#fff;
+    font-size: 20px;
+}
+.amount{
+    display:flex;
+    background-color:#fff;
+    width:1280px;
+    margin: auto;
+    position:relative;
+    top: -66px;
+    /* 좌우측, 하단, 스프레드정도 */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.amount > li{
+    flex: 1;
+    height:132px;
+}
+.amount > li:not(:last-child) > div{
+    border-right: 1px solid gray;
+}
+.amount > li > div{
+    text-align: center;
+    height: 57px;
+    
+    margin-top:37px;
+}
+.amount .contents1{
+    color: gray;
+}
+.amount .contents2{
+    color: gray;
+}
+.main_text0{
+   width:100%;
+   height:700px;
+   background-color: #fff8ea; 
+   /*position->margin*/
+   margin-top: -132px;
+}
+.main_text0 > h1{
+    text-align: center;
+    padding-top: 116px;
+    color:rgb(248, 219, 138);
+}
+.main_text0 > div{
+    text-align: center;
+}
+.clothes{
+    width:1280px;
+    margin:auto;
+    display: flex;
+}
+.clothes > li:not(:last-child){
+    margin-right: 20px;  
+}
+.clothes > li{
+    height:302px;
+    flex:1px;
+    margin-top: 49px; 
+    background-color: white;
+    text-align: center;
+}
+.clothes_img{
+    /* margin-top:36px; */
+    margin-bottom: 36px;
+}
+.clothes .contents3{
+    width:180px;
+}
+.more{
+    width:100px;
+    height: 30px;
+    background-color: rgb(248, 219, 138);
+    margin:auto;
+    margin-top:15px;
+    color: white;
+    cursor: pointer;
+}
+.main_text1{
+    width: 100%;
+    height:800px;
+    /* margin-top:-132px; */
+    /* background: #2F7AF4 */
+  }
+  .main_text1 > h1{
+    padding-top:50px;
+    text-align: center;
+    color: rgb(248, 219, 138);
+  }
+  .main_text1 > .contents1 {
+    padding-top: 30px;
+    text-align: center;
+    color: gray;
+  }
+  .main_text1 > .contents3 {
+    text-align: center;
+    color: gray;
+  }
+  .new {
+    display: flex;
+    width:1280px;
+    display: flex;
+    margin: 49px auto;
+    height:427px;
+  }
+  .new_clothes{
+    flex:1;
+  }
+.main_text2{
+    width:100%;
+    height:418px;
+    background-image: url("image/contact.jpg");
+}
+.main_text2 > div > h1{
+    color: #fff;
+}
+.main_text2 > div{
+    text-align: center;
+    position: relative;
+    bottom: -120px;
+    color: #fff;
+}
+
+.more2{
+    width:220px;
+    height:40px;
+    line-height: 40px;
+    margin:15px auto;
+    border: 1px solid white;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    background: #fff8ea;
+    padding:30px;
+}
+footer > div:first-child{
+    flex:3;
+    text-align: center;
+    color: gray;
+}
+footer > div:last-child{
+    flex:9;
+    color: gray;
+    cursor: pointer;
+}
